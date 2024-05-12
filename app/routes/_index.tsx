@@ -7,6 +7,11 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const clientLoader = () => {
+  throw new Error("This is a test error");
+  return {};
+};
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
